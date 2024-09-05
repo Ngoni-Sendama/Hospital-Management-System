@@ -19,6 +19,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Leandrocfe\FilamentApexCharts\FilamentApexChartsPlugin;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Joaopaulolndev\FilamentEditProfile\Pages\EditProfilePage;
 use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
@@ -47,7 +48,7 @@ class DashboardPanelProvider extends PanelProvider
                     ->shouldShowBrowserSessionsForm(),
                 LightSwitchPlugin::make()
                     ->position(Alignment::TopCenter),
-
+                FilamentApexChartsPlugin::make(),
             ])
             ->userMenuItems([
                 'profile' => MenuItem::make()
