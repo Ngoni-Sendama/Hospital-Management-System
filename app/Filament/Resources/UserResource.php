@@ -17,7 +17,7 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'healthicons-f-doctor';
     protected static ?string $navigationGroup = 'Staff Management';
 
     public static function form(Form $form): Form
@@ -33,8 +33,12 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('password')
                     ->password()
                     ->required(),
-                Forms\Components\TextInput::make('status')
-                    ->required(),
+                Forms\Components\Select::make('status')
+                    ->required()
+                    ->options([
+                        'Active'=>'Active',
+                        'Inactive'=>'Not Active',
+                    ]),
             ]);
     }
 
