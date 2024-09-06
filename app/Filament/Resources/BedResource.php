@@ -49,9 +49,9 @@ class BedResource extends Resource
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_occupied')
                     ->boolean(),
-                Tables\Columns\TextColumn::make('patient.name')
-                    ->numeric()
-                    ->sortable(),
+                // Tables\Columns\TextColumn::make('patient.name')
+                //     ->numeric()
+                //     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

@@ -6,6 +6,7 @@ use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -24,21 +25,55 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required(),
-                Forms\Components\TextInput::make('email')
-                    ->email()
-                    ->required(),
-                Forms\Components\DateTimePicker::make('email_verified_at'),
-                Forms\Components\TextInput::make('password')
-                    ->password()
-                    ->required(),
-                Forms\Components\Select::make('status')
-                    ->required()
-                    ->options([
-                        'Active'=>'Active',
-                        'Inactive'=>'Not Active',
-                    ]),
+                Section::make()
+                    ->columns(2)
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required(),
+                        Forms\Components\TextInput::make('email')
+                            ->email()
+                            ->required(),
+
+                        Forms\Components\TextInput::make('password')
+                            ->password()
+                            ->visibleOn('Create')
+                            ->revealable()
+                            ->required(),
+                        Forms\Components\Select::make('status')
+                            ->required()
+                            ->options([
+                                'Active' => 'Active',
+                                'Inactive' => 'Not Active',
+                            ]),
+
+
+                        Section::make()
+                            ->relationship('profile', 'user_id')
+                            ->columns(2)
+                            ->schema([
+
+                                Forms\Components\TextInput::make('department')
+                                    ->required(),
+                                Forms\Components\TextInput::make('specialization'),
+                                Forms\Components\TextInput::make('contact_number')
+                                    ->required(),
+                                Forms\Components\TextInput::make('email')
+                                    ->email()
+                                    ->label('Home Email')
+                                    ->required(),
+                                Forms\Components\TimePicker::make('shift_start')
+                                    ->required()
+                                    ->seconds(false)
+                                    ->native(false),
+                                Forms\Components\TimePicker::make('shift_end')
+                                    ->required()
+                                    ->seconds(false)
+                                    ->native(false),
+                                Forms\Components\DatePicker::make('employment_date')
+                                    ->required(),
+                            ])
+                    ])
+
             ]);
     }
 
@@ -50,9 +85,12 @@ class UserResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('email_verified_at')
-                    ->dateTime()
-                    ->sortable(),
+                    Tables\Columns\TextColumn::make('profile.department')
+                    ->searchable(),
+                    Tables\Columns\TextColumn::make('profile.shift_start')
+                    ->searchable() // Make the column searchable
+                    ->description(fn (User $record): string => $record->profile->shift_end ?? 'N/A') // Description shows shift_end
+                    ->label('Shift'), // Column label
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
