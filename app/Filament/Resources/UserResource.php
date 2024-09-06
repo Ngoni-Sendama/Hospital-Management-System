@@ -52,7 +52,18 @@ class UserResource extends Resource
                             ->columns(2)
                             ->schema([
 
-                                Forms\Components\TextInput::make('department')
+                                Forms\Components\Select::make('department')
+                                    ->options([
+                                        'Nurses' => 'Nurses',
+                                        'Dentist' => 'Dentist',
+                                        'Surgical Department' => 'Surgical Department',
+                                        'Laboratory Services' => 'Laboratory Services',
+                                        'Pharmacy' => 'Pharmacy',
+                                        'Psychiatry' => 'Psychiatry',
+                                        'Radiology' => 'Radiology',
+                                        'Pediatrics' => 'Pediatrics',
+                                        'Emergency Department' => 'Emergency Department',
+                                    ])
                                     ->required(),
                                 Forms\Components\TextInput::make('specialization'),
                                 Forms\Components\TextInput::make('contact_number')
@@ -85,11 +96,11 @@ class UserResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('email')
                     ->searchable(),
-                    Tables\Columns\TextColumn::make('profile.department')
+                Tables\Columns\TextColumn::make('profile.department')
                     ->searchable(),
-                    Tables\Columns\TextColumn::make('profile.shift_start')
+                Tables\Columns\TextColumn::make('profile.shift_start')
                     ->searchable() // Make the column searchable
-                    ->description(fn (User $record): string => $record->profile->shift_end ?? 'N/A') // Description shows shift_end
+                    ->description(fn(User $record): string => $record->profile->shift_end ?? 'N/A') // Description shows shift_end
                     ->label('Shift'), // Column label
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
