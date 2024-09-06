@@ -70,7 +70,11 @@
                     <div class="col-auto col-lg-2 text-end lg-pe-5px">
                         <div class="header-icon">
                             <div class="header-search-icon icon d-none d-sm-flex">
-                                <a href="#" class="search-form-icon header-search-form"><i class="align-middle feather icon-feather-search fs-18 me-5px xl-me-0"></i><span class="align-middle d-none d-xxl-inline-block"> Search</span></a>
+                                <a href="#" class="search-form-icon header-search-form">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search align-middle feather icon-feather-search fs-18 me-5px xl-me-0" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                      </svg>
+                                     <span class="align-middle d-none d-xxl-inline-block"> Search</span></a>
                                 <div class="search-form-wrapper">
                                     <button title="Close" type="button" class="search-close">×</button>
                                     <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
@@ -106,14 +110,17 @@
                     <div class="col-xl-7 col-lg-8 col-md-10 text-white position-relative text-center text-lg-start">
                         <div class="fs-90 sm-fs-80 xs-fs-70 fw-600 mb-20px ls-minus-4px overflow-hidden">
                             <div class="d-inline-block" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900 }'>
-                                Power up web with
+                                Hospital
+                                Management
+
                                 <div class="highlight-separator" data-shadow-animation="true" data-animation-delay="1500">
-                                    hosting<span><img src="images/highlight-separator.svg" alt=""></span>
+                                    Software<span><img src="images/highlight-separator.svg" alt=""></span>
                                 </div>
                             </div>
                         </div>
                         <div class="fs-19 fw-300 mb-30px w-80 sm-w-100 opacity-6 d-block mx-auto mx-lg-0 overflow-hidden">
-                            <span class="d-inline-block lh-32" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 300 }'>Get access to tons of free apps to create websites, eCommerce websites and blogs installations.</span>
+                            <span class="d-inline-block lh-32" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 300 }'>Everything you need to run a hospital
+                                .</span>
                         </div>
                         <div class="overflow-hidden pt-5px">
                             <a href="demo-hosting-hosting.html" class="btn btn-extra-large btn-yellow btn-rounded btn-box-shadow btn-switch-text d-inline-block me-15px xs-m-10px align-middle fw-600" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 500 }'>
@@ -130,8 +137,8 @@
                     </div>
                     <div class="col-xl-5 col-lg-4">
                         <div class="outside-box-right-7 position-relative" data-anime='{ "opacity": [0, 1], "translateY": [100, 0], "easing": "easeOutQuad", "duration": 1200, "delay": 200 }'>
-                            <img class="w-100" src="https://via.placeholder.com/724x792" alt="">
-                            <img class="w-100 position-absolute left-minus-2px top-minus-5px animation-float" src="https://via.placeholder.com/724x792" alt="">
+                            <img class="w-100" src="{{asset('images/HeroImage.png')}}" alt="">
+                            <img class="w-100 position-absolute left-minus-2px top-minus-5px animation-float" src="{{asset('images/HeroImage.png')}}" alt="">
                         </div>
                     </div>
                 </div>
@@ -142,19 +149,19 @@
         <section class="bg-very-light-gray pt-20px pb-20px sm-pt-40px" data-anime='{ "opacity": [0, 1], "translateY": [0, 0], "easing": "easeOutQuad", "duration": 1000,"staggervalue": 300, "delay": 600 }'>
             <div class="container overlap-section">
                 <div class="row justify-content-center overlap-section border-radius-6px overflow-hidden g-0 box-shadow-extra-large">
-                    <div class="col-lg-9 text-center fw-600 fs-24 lg-fs-22 ls-minus-05px text-dark-gray bg-white p-30px md-p-20px"><a href="demo-hosting-domain.html" class="fw-700 text-base-color text-decoration-line-bottom-medium">Get free domain</a> with managed WordPress dedicated hosting.</div>
-                    <div class="col-lg-3 text-center bg-yellow pt-30px pb-30px md-p-20px"><a href="demo-hosting-pricing.html" class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">Just ₹5.99 month<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
+                    <div class="col-lg-9 text-center fw-600 fs-24 lg-fs-22 ls-minus-05px text-dark-gray bg-white p-30px md-p-20px">Empower your Hospital efficiency with Hospital Management Software</div>
+                    <div class="col-lg-3 text-center bg-yellow pt-30px pb-30px md-p-20px"><a href="demo-hosting-pricing.html" class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">Just ₹200 month<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
                 </div>
             </div>
         </section>
         <!-- end section -->
         <!-- start section -->
-        <section class="cover-background pt-5 xs-pt-8" style="background-image: url('https://via.placeholder.com/1920x751')">
+        <section class="cover-background pt-5 xs-pt-8" style="background-image: url('https://craftohtml.themezaa.com/images/demo-hosting-home-02.png')">
             <div class="container">
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-8 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 900, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="text-base-color fw-600 mb-5px text-uppercase d-block">Hosting solutions</span>
-                        <h2 class="text-dark-gray fw-700 ls-minus-2px">Hosting services</h2>
+                        <span class="text-base-color fw-600 mb-5px text-uppercase d-block">Why</span>
+                        <h2 class="text-dark-gray fw-700 ls-minus-2px">Hresources</h2>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs",  "translateY": [0, 0], "perspective": [1200, 1200], "scale": [1.05, 1], "rotateX": [50, 0], "opacity": [0,1], "duration":600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -162,11 +169,11 @@
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px">
-                                <img src="images/demo-hosting-home-icon-02.svg" class="h-50px" alt="">
+                                <img src="https://craftohtml.themezaa.com/images/demo-hosting-home-icon-02.svg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Online store</span>
-                                <p class="mb-10px">Lorem dummy printing type setting industry.</p>
+                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Complete Healthcare Solution</span>
+
                                 <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
@@ -182,11 +189,11 @@
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px">
-                                <img src="images/demo-hosting-home-icon-03.svg" class="h-50px" alt="">
+                                <img src="{{asset('images/equipment.png')}}" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Web hosting</span>
-                                <p class="mb-10px">Lorem dummy printing type setting industry.</p>
+                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Affordable</span>
+
                                 <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
@@ -205,8 +212,8 @@
                                 <img src="images/demo-hosting-home-icon-04.svg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Business email</span>
-                                <p class="mb-10px">Lorem dummy printing type setting industry.</p>
+                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Equipment Management</span>
+
                                 <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
@@ -225,8 +232,8 @@
                                 <img src="images/demo-hosting-home-icon-05.svg" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Cloud storage</span>
-                                <p class="mb-10px">Lorem dummy printing type setting industry.</p>
+                                <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Resource Usage Analytics</span>
+
                                 <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
@@ -247,25 +254,25 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center mb-6 sm-mb-50px position-relative">
                     <div class="col-lg-6 col-md-10 position-relative md-mb-30px" data-anime='{ "effect": "slide", "color": "#ffffff", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
-                        <img class="w-100" src="https://via.placeholder.com/630x621" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)" alt="">
+                        <img class="w-100" src="{{asset('images/630x621.jpg')}}" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)" alt="">
                     </div>
                     <div class="col-lg-5 offset-lg-1 last-paragraph-no-margin" data-anime='{ "el": "childs", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "delay": 300, "easing": "easeOutCirc" }'>
                         <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Simple and intuitive</span>
-                        <h2 class="fw-600 text-dark-gray w-90 lg-w-100 text-dark-gray fw-700 ls-minus-2px">Solutions for your business.</h2>
+                        <h2 class="fw-600 text-dark-gray w-90 lg-w-100 text-dark-gray fw-700 ls-minus-2px">Real-time Bed Allocation and Monitoring</h2>
                         <p class="w-90 sm-w-100">Getting your website live is as simple as a click of a button. Everything you need provided in a clear way.</p>
                         <ul class="p-0 mb-25px mt-15px list-style-01 w-90 lg-w-100">
                             <li class="border-color-extra-medium-gray fw-600 text-dark-gray d-flex align-items-center pt-15px pb-15px">
                                 <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px rounded-circle bg-solitude-blue me-10px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-13 text-base-color"></i></div>
-                                Get 30% discount qualifying purchases.
+                                Track availability and occupancy of beds across wards.
                             </li>
                             <li class="border-color-extra-medium-gray fw-600 text-dark-gray d-flex align-items-center pt-15px pb-15px">
                                 <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px rounded-circle bg-solitude-blue me-10px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-13 text-base-color"></i></div>
-                                Grow and connect with developers.
+                                Automatically assign beds to patients based on real-time availability and patient priority (e.g., ICU beds for critical patients).
                             </li>
                         </ul>
                         <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text">
                             <span>
-                                <span class="btn-double-text" data-text="Lowest pricing">Premium pricing</span>
+                                <span class="btn-double-text" data-text="Lowest pricing">Get started</span>
                                 <span><i class="feather icon-feather-arrow-right"></i></span>
                             </span>
                         </a>
@@ -281,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="process-content ps-20px last-paragraph-no-margin">
-                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">Choose a hosting plan</span>
+                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">Choose a your plan</span>
                                 <p>Lorem ipsum simply printing</p>
                             </div>
                         </div>
@@ -296,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="process-content ps-20px last-paragraph-no-margin">
-                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">Select a domain name</span>
+                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">Enter Hopsital Details</span>
                                 <p>Lorem ipsum simply printing</p>
                             </div>
                         </div>
@@ -311,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="process-content ps-20px last-paragraph-no-margin">
-                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">Upload your website</span>
+                                <span class="d-block fw-600 text-dark-gray fs-17 ls-minus-05px alt-font">start managing</span>
                                 <p>Lorem ipsum simply printing</p>
                             </div>
                         </div>
@@ -338,7 +345,7 @@
                                 <i class="line-icon-URL-Window icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">Domain name<br>generator</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Medical Staff Management</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -351,7 +358,7 @@
                                 <i class="line-icon-Cloud-Email icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">SQL server<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Equipment Management</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -364,7 +371,7 @@
                                 <i class="line-icon-Network-Window icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">Cheap web<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Resource Usage Analytics</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -377,7 +384,9 @@
                                 <i class="line-icon-Envelope icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">Website email<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Demand Prediction <br> and Optimization
+
+                                </span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -390,7 +399,7 @@
                                 <i class="line-icon-Wordpress icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">WordPress<br>installation</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Patient Flow Optimization</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -403,7 +412,7 @@
                                 <i class="line-icon-Big-Data icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">Game server<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Alerts and Notifications</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -416,7 +425,7 @@
                                 <i class="line-icon-Data-Password icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">VPS server<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Admin Dashboard</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -429,7 +438,7 @@
                                 <i class="line-icon-Globe icon-extra-large text-white mb-15px"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-inline-block text-white fw-500 lh-24">Free website<br>hosting</span>
+                                <span class="d-inline-block text-white fw-500 lh-24">Automated Scheduling</span>
                             </div>
                             <div class="feature-box-overlay bg-white"></div>
                         </div>
@@ -467,7 +476,7 @@
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-8 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <span class="text-base-color fw-600 mb-5px text-uppercase d-block">Pricing plans</span>
-                        <h2 class="fw-600 text-dark-gray text-dark-gray fw-700 ls-minus-2px">Hosting plans</h2>
+                        <h2 class="fw-600 text-dark-gray text-dark-gray fw-700 ls-minus-2px">Hospital Management plans</h2>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mb-6 md-mb-8">
@@ -476,9 +485,9 @@
                         <!-- start pricing table -->
                         <div class="pricing-table text-center pt-16 pb-35px bg-white box-shadow-quadruple-large border-radius-6px">
                             <div class="pricing-header ps-18 pe-18 md-ps-12 md-pe-12">
-                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Standard</div>
+                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Basic Care</div>
                                 <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>250</h2>
-                                <p class="mb-25px lh-28">All the basics for businesses that are just getting started.</p>
+                                <p class="mb-25px lh-28">Perfect for small clinics or hospitals just starting out. Includes essential features for managing patients and hospital resources.</p>
                                 <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
@@ -486,13 +495,7 @@
                                 </a>
                                 <span class="fs-13 w-100 d-block mt-5px">Monthly billing</span>
                             </div>
-                            <div class="pricing-body pt-15px pb-25px">
-                                <ul class="list-style-01 ps-0 mb-0">
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px">Unlimited bandwidth</li>
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px"><span class="opacity-6">Full backup systems</span></li>
-                                    <li class="border-color-transparent-dark-very-light border-bottom pt-10px pb-10px"><span class="opacity-6">Unlimited database</span></li>
-                                </ul>
-                            </div>
+
                             <div class="pricing-footer">
                                 <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
                             </div>
@@ -504,9 +507,9 @@
                         <!-- start pricing table -->
                         <div class="pricing-table text-center pt-16 pb-35px bg-white box-shadow-quadruple-large border-radius-6px">
                             <div class="pricing-header ps-18 pe-18 md-ps-12 md-pe-12">
-                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Business</div>
-                                <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>350</h2>
-                                <p class="mb-25px lh-28">All the basics for businesses that are just getting started.</p>
+                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Adavanced </div>
+                                <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>750</h2>
+                                <p class="mb-25px lh-28">Designed for medium-sized hospitals with growing needs. Includes advanced patient management, scheduling, and resource tracking.</p>
                                 <a href="demo-hosting-pricing.html" class="btn btn-large btn-yellow btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
@@ -514,13 +517,7 @@
                                 </a>
                                 <span class="fs-13 w-100 d-block mt-5px">Monthly billing</span>
                             </div>
-                            <div class="pricing-body pt-15px pb-25px">
-                                <ul class="list-style-01 ps-0 mb-0">
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px">Unlimited bandwidth</li>
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px">Full backup systems</li>
-                                    <li class="border-color-transparent-dark-very-light border-bottom pt-10px pb-10px"><span class="opacity-6">Unlimited database</span></li>
-                                </ul>
-                            </div>
+
                             <div class="pricing-footer">
                                 <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
                             </div>
@@ -532,22 +529,15 @@
                         <!-- start pricing table -->
                         <div class="pricing-table text-center pt-16 pb-35px bg-white box-shadow-quadruple-large border-radius-6px">
                             <div class="pricing-header ps-18 pe-18 md-ps-12 md-pe-12">
-                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Ultimate</div>
-                                <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>450</h2>
-                                <p class="mb-25px lh-28">All the basics for businesses that are just getting started.</p>
+                                <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Premium Care</div>
+                                <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>1050</h2>
+                                <p class="mb-25px lh-28">Best for large hospitals with extensive operations. Offers comprehensive management tools, including patient records, doctor scheduling, bed management, and equipment tracking, with priority support.</p>
                                 <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
                                     </span>
                                 </a>
                                 <span class="fs-13 w-100 d-block mt-5px">Monthly billing</span>
-                            </div>
-                            <div class="pricing-body pt-15px pb-25px">
-                                <ul class="list-style-01 ps-0 mb-0">
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px">Unlimited bandwidth</li>
-                                    <li class="border-color-transparent-dark-very-light pt-10px pb-10px">Full backup systems</li>
-                                    <li class="border-color-transparent-dark-very-light border-bottom pt-10px pb-10px">Unlimited database</li>
-                                </ul>
                             </div>
                             <div class="pricing-footer">
                                 <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
@@ -568,11 +558,11 @@
         <!-- start section -->
         <section class="overflow-hidden">
             <div class="container">
-                <div class="row align-items-center justify-content-center border-radius-8px p-4 xs-p-7 text-center text-lg-start g-0 cover-background" style="background-image: url('images/demo-hosting-home-03.jpg')" data-bottom-top="transform:scale(1.1, 1.1) translateY(30px);" data-top-bottom="transform:scale(1.0, 1.0) translateY(-30px);">
+                <div class="row align-items-center justify-content-center border-radius-8px p-4 xs-p-7 text-center text-lg-start g-0 cover-background" style="background-image: url('https://craftohtml.themezaa.com/images/demo-hosting-home-03.jpg')" data-bottom-top="transform:scale(1.1, 1.1) translateY(30px);" data-top-bottom="transform:scale(1.0, 1.0) translateY(-30px);">
                     <div class="col-lg-6 col-md-9 md-mb-10px icon-with-text-style-08">
                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                             <div class="feature-box-icon feature-box-icon-rounded w-100px h-100px rounded-circle border border-2 border-color-transparent-white-light me-30px xs-me-25px">
-                                <img src="images/demo-hosting-home-icon.svg" class="w-50px h-50px" alt="">
+                                <img src="https://craftohtml.themezaa.com/images/demo-hosting-home-icon.svg" class="w-50px h-50px" alt="">
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <h5 class="d-inline-block fw-600 text-white mb-0">Are you ready for a better productive business?</h5>
@@ -582,7 +572,7 @@
                     <div class="col-lg-6 text-center text-lg-end">
                         <div class="text-white d-inline-block last-paragraph-no-margin me-20px xs-m-10px">
                             <p class="opacity-8 d-inline-block">Starting at only</p>
-                            <span class="fw-600 d-inline-block text-decoration-line-bottom">₹2.78 per month</span>
+                            <span class="fw-600 d-inline-block text-decoration-line-bottom">₹250 per month</span>
                         </div>
                         <a href="#" class="btn btn-medium btn-yellow btn-rounded fw-600 btn-switch-text btn-box-shadow">
                             <span>
@@ -613,13 +603,13 @@
                                 <div class="accordion-header border-bottom border-color-extra-medium-gray">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-01" aria-expanded="true" data-bs-parent="#accordion-style-02">
                                         <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                            <i class="feather icon-feather-chevron-up icon-extra-medium"></i><span class="fw-600 fs-18">How long is this site live?</span>
+                                            <i class="feather icon-feather-chevron-up icon-extra-medium"></i><span class="fw-600 fs-18">What is hospital management information system?</span>
                                         </div>
                                     </a>
                                 </div>
                                 <div id="accordion-style-02-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-style-02">
                                     <div class="accordion-body last-paragraph-no-margin border-bottom border-color-light-medium-gray">
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>Hospital management information system is a computerised system that help in managing clinical, financial, laboratory, Inpatient, outpatient, pharmaceutical, etc. operations in a hospital. With the help of Hospital Management Information system, healtcare providers can focus more on providing quality healthcare to the patients.</p>
                                     </div>
                                 </div>
                             </div>
@@ -629,13 +619,13 @@
                                 <div class="accordion-header border-bottom border-color-extra-medium-gray">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-02" aria-expanded="false" data-bs-parent="#accordion-style-02">
                                         <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                            <i class="feather icon-feather-chevron-down icon-extra-medium"></i><span class="fw-600 fs-18">Can i install/upload anything is want on there?</span>
+                                            <i class="feather icon-feather-chevron-down icon-extra-medium"></i><span class="fw-600 fs-18">What does a hospital information system do?</span>
                                         </div>
                                     </a>
                                 </div>
                                 <div id="accordion-style-02-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
                                     <div class="accordion-body last-paragraph-no-margin border-bottom border-color-light-medium-gray">
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>A hospital information system helps healthcare providers in streamlining their operations including managing patient health records(EMR/EHR), appointments, billing, diagnostics and much more.</p>
                                     </div>
                                 </div>
                             </div>
@@ -645,128 +635,25 @@
                                 <div class="accordion-header border-bottom border-color-light-medium-gray">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-03" aria-expanded="false" data-bs-parent="#accordion-style-02">
                                         <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                            <i class="feather icon-feather-chevron-down icon-extra-medium"></i><span class="fw-600 fs-18">How can i migrate to another site?</span>
+                                            <i class="feather icon-feather-chevron-down icon-extra-medium"></i><span class="fw-600 fs-18">What is the major role of Hresources  ?</span>
                                         </div>
                                     </a>
                                 </div>
                                 <div id="accordion-style-02-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
                                     <div class="accordion-body last-paragraph-no-margin border-bottom border-color-light-medium-gray">
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>The system uses real-time data to predict demand and streamline hospital operations. It features a smart resource management system that optimizes the use of beds, medical staff, and equipment, ensuring efficient hospital workflows and better patient care.</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- end accordion item -->
-                            <!-- start accordion item -->
-                            <div class="accordion-item">
-                                <div class="accordion-header border-bottom border-color-transparent">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-04" aria-expanded="false" data-bs-parent="#accordion-style-02">
-                                        <div class="accordion-title mb-0 position-relative text-dark-gray pe-30px">
-                                            <i class="feather icon-feather-chevron-down icon-extra-medium"></i><span class="fw-600 fs-18">Can i change the domain you give me?</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="accordion-style-02-04" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
-                                    <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent">
-                                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end section -->
-        <!-- start section -->
-        <section class="overflow-hidden p-0">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-xl-5 col-lg-7 col-md-8 position-relative text-center text-xl-start lg-mb-15px" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Client feedback</span>
-                        <h3 class="alt-font fw-700 ls-minus-1px text-dark-gray mb-20px mx-auto">What do people say about our services?</h3>
-                        <div class="d-block mb-30px fs-18 ls-minus-05px">
-                            See our 437 reviews on <a href="#" class="align-middle position-relative top-minus-2px"><img src="https://via.placeholder.com/112x28" alt=""></a>
-                        </div>
-                        <div class="d-flex justify-content-center justify-content-xl-start">
-                            <!-- start slider navigation -->
-                            <div class="slider-one-slide-prev-1 text-dark-gray swiper-button-prev slider-navigation-style-04 border border-1 border-color-extra-medium-gray" tabindex="0" role="button" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></div>
-                            <div class="slider-one-slide-next-1 text-dark-gray swiper-button-next slider-navigation-style-04 border border-1 border-color-extra-medium-gray" tabindex="0" role="button" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></div>
-                            <!-- end slider navigation -->
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-10 overflow-hidden" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="outside-box-right-15 xl-outside-box-right-20 sm-outside-box-right-0">
-                            <div class="swiper slider-one-slide slider-shadow-right sm-slider-shadow-none magic-cursor overflow-visible ps-25px sm-p-0" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 40, "loop": true, "pagination": { "el": ".slider-one-slide-pagination", "clickable": true, "dynamicBullets": false }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 2 }, "768": { "slidesPerView": 2 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
-                                <div class="swiper-wrapper pt-30px pb-30px">
-                                    <!-- start review item -->
-                                    <div class="swiper-slide review-style-06">
-                                        <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
-                                            <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://via.placeholder.com/125x125" alt="">
-                                                <div class="d-inline-block align-middle last-paragraph-no-margin">
-                                                    <div class="alt-font text-dark-gray fw-600 fs-18">Herman Miller</div>
-                                                    <p class="lh-24 d-block">Digital marketer</p>
-                                                </div>
-                                                <div class="border-radius-30px bg-yellow ps-15px pe-15px fs-14 fw-700 text-dark-gray d-inline-block align-middle ms-auto md-position-absolute md-right-15px md-top-15px"><i class="fa-solid fa-star me-5px"></i>5.0</div>
-                                            </div>
-                                            <p>We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate.</p>
-                                        </div>
-                                    </div>
-                                    <!-- end review item -->
-                                    <!-- start review item -->
-                                    <div class="swiper-slide review-style-06">
-                                        <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
-                                            <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://via.placeholder.com/125x125" alt="">
-                                                <div class="d-inline-block align-middle last-paragraph-no-margin">
-                                                    <div class="alt-font text-dark-gray fw-600 fs-18">Alexander Harad</div>
-                                                    <p class="lh-24 d-block">Digital marketer</p>
-                                                </div>
-                                                <div class="border-radius-30px bg-yellow ps-15px pe-15px fs-14 fw-700 text-dark-gray d-inline-block align-middle ms-auto md-position-absolute md-right-15px md-top-15px"><i class="fa-solid fa-star me-5px"></i>4.5</div>
-                                            </div>
-                                            <p>They have provided superior quality of content marketing services. Very satisfied by choosing them. Thank you!</p>
-                                        </div>
-                                    </div>
-                                    <!-- end review item -->
-                                    <!-- start review item -->
-                                    <div class="swiper-slide review-style-06">
-                                        <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
-                                            <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://via.placeholder.com/125x125" alt="">
-                                                <div class="d-inline-block align-middle last-paragraph-no-margin">
-                                                    <div class="alt-font text-dark-gray fw-600 fs-18">Shoko Mugikura</div>
-                                                    <p class="lh-24 d-block">Digital marketer</p>
-                                                </div>
-                                                <div class="border-radius-30px bg-yellow ps-15px pe-15px fs-14 fw-700 text-dark-gray d-inline-block align-middle ms-auto md-position-absolute md-right-15px md-top-15px"><i class="fa-solid fa-star me-5px"></i>5.0</div>
-                                            </div>
-                                            <p>We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate.</p>
-                                        </div>
-                                    </div>
-                                    <!-- end review item -->
-                                    <!-- start review item -->
-                                    <div class="swiper-slide review-style-06">
-                                        <div class="d-flex justify-content-center h-100 flex-column bg-white box-shadow-medium p-45px md-p-35px border-radius-6px last-paragraph-no-margin">
-                                            <div class="mb-20px d-flex align-items-center">
-                                                <img class="rounded-circle w-90px h-90px me-20px" src="https://via.placeholder.com/125x125" alt="">
-                                                <div class="d-inline-block align-middle last-paragraph-no-margin">
-                                                    <div class="alt-font text-dark-gray fw-600 fs-18">Jacob Kalling</div>
-                                                    <p class="lh-24 d-block">Digital marketer</p>
-                                                </div>
-                                                <div class="border-radius-30px bg-yellow ps-15px pe-15px fs-14 fw-700 text-dark-gray d-inline-block align-middle ms-auto md-position-absolute md-right-15px md-top-15px"><i class="fa-solid fa-star me-5px"></i>5.0</div>
-                                            </div>
-                                            <p>We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate.</p>
-                                        </div>
-                                    </div>
-                                    <!-- end review item -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
+
         <!-- start section -->
         <section class="pt-4">
             <div class="container">
@@ -820,12 +707,14 @@
         </section>
         <!-- end section -->
         <!-- start footer -->
-        <footer class="footer-dark bg-dark-blue pb-0 cover-background background-position-left-top" style="background-image: url('images/demo-hosting-footer-bg.jpg')">
+        <footer class="footer-dark bg-dark-blue pb-0 cover-background background-position-left-top" style="background-image: url('https://craftohtml.themezaa.com/images/demo-hosting-footer-bg.jpg')">
             <div class="container">
                 <div class="row justify-content-center mb-5 md-mb-8 sm-mb-40px">
                     <!-- start footer column -->
                     <div class="col-6 col-lg-3 last-paragraph-no-margin order-sm-1 md-mb-40px xs-mb-30px">
-                        <a href="demo-hosting.html" class="footer-logo mb-15px d-inline-block"><img src="images/demo-hosting-logo-white.png" data-at2x="images/demo-hosting-logo-white@2x.png" alt=""></a>
+                        <a href="demo-hosting.html" class="footer-logo mb-15px d-inline-block">
+                            HResources
+                        </a>
                         <p class="w-90 lg-w-100">Lorem ipsum amet adipiscing elit to eiusmod ad tempor incididunt enim.</p>
                         <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">
                             <ul class="small-icon light">
@@ -880,12 +769,7 @@
                                 <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
                             </form>
                         </div>
-                        <div class="footer-card">
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://via.placeholder.com/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://via.placeholder.com/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://via.placeholder.com/55x20" alt=""></a>
-                            <a href="#" class="d-inline-block me-5px xxl-me-0 align-middle"><img src="https://via.placeholder.com/55x20" alt=""></a>
-                        </div>
+
                     </div>
                     <!-- end footer column -->
                 </div>
@@ -895,37 +779,7 @@
             </div>
         </footer>
         <!-- end footer -->
-        <!-- start sticky elements -->
-        <div class="sticky-wrap z-index-1 d-none d-xl-inline-block" data-animation-delay="100" data-shadow-animation="true">
-            <div class="elements-social social-icon-style-10">
-                <ul class="fs-14">
-                    <li class="me-30px"><a class="facebook" href="https://www.facebook.com/" target="_blank">
-                            <i class="fa-brands fa-facebook-f me-10px"></i>
-                            <span class="alt-font">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="me-30px">
-                        <a class="dribbble" href="http://www.dribbble.com" target="_blank">
-                            <i class="fa-brands fa-dribbble me-10px"></i>
-                            <span class="alt-font">Dribbble</span>
-                        </a>
-                    </li>
-                    <li class="me-30px">
-                        <a class="twitter" href="http://www.twitter.com" target="_blank">
-                            <i class="fa-brands fa-twitter me-10px"></i>
-                            <span class="alt-font">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="instagram" href="http://www.instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram me-10px"></i>
-                            <span class="alt-font">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- end sticky elements -->
+
          <!-- start scroll progress -->
         <div class="scroll-progress d-none d-xxl-block">
           <a href="#" class="scroll-top" aria-label="scroll">
