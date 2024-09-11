@@ -18,6 +18,11 @@ class Patient extends Model
         return $this->belongsTo(Bed::class);
     }
 
+    public function admissions(): HasMany
+    {
+        return $this->hasMany(AdmittedDetail::class);
+    }
+
     // Boot method to handle events
     protected static function boot()
     {

@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\PatientResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\PatientResource\RelationManagers;
+use App\Filament\Resources\PatientResource\RelationManagers\AdmissionsRelationManager;
 use Filament\Forms\Components\Section;
 
 class PatientResource extends Resource
@@ -29,41 +30,41 @@ class PatientResource extends Resource
         return $form
             ->schema([
                 Section::make()
-                ->schema([
-                    Forms\Components\TextInput::make('name')
-                    ->required(),
-                Forms\Components\DatePicker::make('date_of_birth')
-                    ->required(),
-                Forms\Components\Radio::make('gender')
-                ->required()
-                ->options([
-                    'Male' => 'Male',
-                    'Female' => 'Female',
-                ])
-                ->inline()
-                ->label('Gender'),
-                Forms\Components\DatePicker::make('admission_date')
-                    ->required(),
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required(),
+                        Forms\Components\DatePicker::make('date_of_birth')
+                            ->required(),
+                        Forms\Components\Radio::make('gender')
+                            ->required()
+                            ->options([
+                                'Male' => 'Male',
+                                'Female' => 'Female',
+                            ])
+                            ->inline()
+                            ->label('Gender'),
+                        Forms\Components\DatePicker::make('admission_date')
+                            ->required(),
 
-                Forms\Components\Select::make('bed_id')
-                    ->required()
-                    ->label('Select Bed')
-                    ->options(Bed::where('is_occupied', false)
-                        ->pluck('bed_number', 'id')
-                        ->toArray()),
-                Forms\Components\Radio::make('status')
-                    ->required()
-                    ->inline()
-                    ->columnSpanFull()
-                    ->live()
-                    ->options([
-                        'Admitted' => 'Admitted',
-                        'Discharged' =>  'Discharged',
-                        'Pending' => 'Pending'
-                    ]),
-                    Forms\Components\DatePicker::make('discharge_date')
-                    ->hidden(fn (Get $get): bool => $get('status') !== 'Discharged'),
-                ])
+                        Forms\Components\Select::make('bed_id')
+                            ->required()
+                            ->label('Select Bed')
+                            ->options(Bed::where('is_occupied', false)
+                                ->pluck('bed_number', 'id')
+                                ->toArray()),
+                        Forms\Components\Radio::make('status')
+                            ->required()
+                            ->inline()
+                            ->columnSpanFull()
+                            ->live()
+                            ->options([
+                                'Admitted' => 'Admitted',
+                                'Discharged' =>  'Discharged',
+                                'Pending' => 'Pending'
+                            ]),
+                        Forms\Components\DatePicker::make('discharge_date')
+                            ->hidden(fn(Get $get): bool => $get('status') !== 'Discharged'),
+                    ])
 
             ]);
     }
@@ -88,7 +89,7 @@ class PatientResource extends Resource
                 Tables\Columns\TextColumn::make('bed.bed_number')
                     ->numeric()
                     ->label('Bed Number')
-                    ->description(fn (Patient $record): string => $record->bed->ward->name ?? 'N/A')
+                    ->description(fn(Patient $record): string => $record->bed->ward->name ?? 'N/A')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('status')
                     ->searchable(),
@@ -118,7 +119,7 @@ class PatientResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            AdmissionsRelationManager::class,
         ];
     }
 

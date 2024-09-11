@@ -19,6 +19,11 @@ class WardResource extends Resource
 
     protected static ?string $navigationIcon = 'iconoir-house-rooms';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
     protected static ?string $navigationGroup = 'Facility Management';
 
     public static function form(Form $form): Form

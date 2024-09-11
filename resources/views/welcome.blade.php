@@ -29,10 +29,10 @@
                 <div class="container-fluid">
                     <div class="row h-42px align-items-center m-0">
                         <div class="col-md-7 text-center text-md-start">
-                            <div class="fs-13 text-white"><span class="opacity-6 me-5px">Get a hosting plans, as low as starting at only</span><span class="fw-600">₹2.78/mo*</span></div>
+                            <div class="fs-13 text-white"><span class="opacity-6 me-5px">Get a hosting plans, as low as starting at only</span><span class="fw-600">₹200/mo*</span></div>
                         </div>
                         <div class="col-5 text-end d-none d-md-flex">
-                            <a href="demo-hosting-contact.html" class="widget fs-13 me-20px text-white opacity-8 d-none d-lg-inline-block"><i class="feather icon-feather-phone"></i>Customer service</a>
+                            <a href="javascript:;" class="widget fs-13 me-20px text-white opacity-8 d-none d-lg-inline-block"><i class="feather icon-feather-phone"></i>Customer service</a>
                             <a href="mailto:support@domain.com" class="widget fs-13 text-white text-white-hover opacity-8"><i class="feather icon-feather-mail text-white position-relative top-1px"></i>support@domain.com</a>
                         </div>
                     </div>
@@ -42,10 +42,11 @@
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                        <a class="navbar-brand" href="demo-hosting.html">
-                            <img src="images/demo-hosting-logo-white.png" data-at2x="images/demo-hosting-logo-white@2x.png" alt="" class="default-logo">
+                        <a class="navbar-brand" href="/">
+                            {{-- <img src="images/demo-hosting-logo-white.png" data-at2x="images/demo-hosting-logo-white@2x.png" alt="" class="default-logo">
                             <img src="images/demo-hosting-logo-black.png" data-at2x="images/demo-hosting-logo-black@2x.png" alt="" class="alt-logo">
-                            <img src="images/demo-hosting-logo-black.png" data-at2x="images/demo-hosting-logo-black@2x.png" alt="" class="mobile-logo">
+                            <img src="images/demo-hosting-logo-black.png" data-at2x="images/demo-hosting-logo-black@2x.png" alt="" class="mobile-logo"> --}}
+                            <h6 style="color: white;">HResource</h6>
                         </a>
                     </div>
                     <div class="col-auto menu-order position-static">
@@ -57,13 +58,13 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a href="demo-hosting.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="demo-hosting-about.html" class="nav-link">About</a></li>
-                                <li class="nav-item"><a href="demo-hosting-hosting.html" class="nav-link">Hosting</a></li>
-                                <li class="nav-item"><a href="demo-hosting-domain.html" class="nav-link">Domain</a></li>
-                                <li class="nav-item"><a href="demo-hosting-pricing.html" class="nav-link">Pricing</a></li>
-                                <li class="nav-item"><a href="demo-hosting-support.html" class="nav-link">Support</a></li>
-                                <li class="nav-item"><a href="demo-hosting-contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="javascript:;" class="nav-link">Billing</a></li>
+                                <li class="nav-item"><a href="javascript:;" class="nav-link">Solutions</a></li>
+                                <li class="nav-item"><a href="javascript:;" class="nav-link">Pricing</a></li>
+                                <li class="nav-item"><a href="javascript:;" class="nav-link">Support</a></li>
+                                <li class="nav-item"><a href="javascript:;" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -89,9 +90,9 @@
                                 </div>
                             </div>
                             <div class="header-button ms-30px xxl-ms-10px xs-ms-0">
-                                <a href="#" class="btn btn-white btn-small btn-rounded btn-box-shadow btn-switch-text fw-600">
+                                <a href="{{route('filament.dashboard.auth.login')}}" class="btn btn-white btn-small btn-rounded btn-box-shadow btn-switch-text fw-600">
                                     <span>
-                                        <span class="btn-double-text" data-text="Sign up">Sign up</span>
+                                        <span class="btn-double-text" data-text="Sign up">Sign In</span>
                                     </span>
                                 </a>
                             </div>
@@ -123,7 +124,7 @@
                                 .</span>
                         </div>
                         <div class="overflow-hidden pt-5px">
-                            <a href="demo-hosting-hosting.html" class="btn btn-extra-large btn-yellow btn-rounded btn-box-shadow btn-switch-text d-inline-block me-15px xs-m-10px align-middle fw-600" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 500 }'>
+                            <a href="javascript:;" class="btn btn-extra-large btn-yellow btn-rounded btn-box-shadow btn-switch-text d-inline-block me-15px xs-m-10px align-middle fw-600" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 500 }'>
                                 <span>
                                     <span class="btn-double-text" data-text="Get started">Get started</span>
                                     <span><i class="feather icon-feather-arrow-right"></i></span>
@@ -131,7 +132,7 @@
                             </a>
                             <div class="text-white fs-15 d-inline-block last-paragraph-no-margin align-middle" data-anime='{ "translateY": [100, 0], "easing": "easeOutCubic", "duration": 900, "delay": 700 }'>
                                 <p class="opacity-6 ls-minus-05px d-inline-block">Starting at only</p>
-                                <span class="fw-500 d-inline-block ">₹2.78/mo*</span>
+                                <span class="fw-500 d-inline-block ">₹200/mo*</span>
                             </div>
                         </div>
                     </div>
@@ -150,7 +151,7 @@
             <div class="container overlap-section">
                 <div class="row justify-content-center overlap-section border-radius-6px overflow-hidden g-0 box-shadow-extra-large">
                     <div class="col-lg-9 text-center fw-600 fs-24 lg-fs-22 ls-minus-05px text-dark-gray bg-white p-30px md-p-20px">Empower your Hospital efficiency with Hospital Management Software</div>
-                    <div class="col-lg-3 text-center bg-yellow pt-30px pb-30px md-p-20px"><a href="demo-hosting-pricing.html" class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">Just ₹200 month<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
+                    <div class="col-lg-3 text-center bg-yellow pt-30px pb-30px md-p-20px"><a href="javascript:;" class="fw-700 text-dark-gray text-dark-gray-hover fs-24 lg-fs-20 ls-minus-05px">Just ₹200 month<i class="feather icon-feather-arrow-right ms-5px"></i></a></div>
                 </div>
             </div>
         </section>
@@ -174,7 +175,7 @@
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Complete Healthcare Solution</span>
 
-                                <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
+                                <a href="javascript:;" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
                                         <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
@@ -189,12 +190,12 @@
                     <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px">
-                                <img src="{{asset('images/equipment.png')}}" class="h-50px" alt="">
+                                <img src="" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Affordable</span>
 
-                                <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
+                                <a href="javascript:;" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
                                         <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
@@ -209,12 +210,12 @@
                     <div class="col icon-with-text-style-07 transition-inner-all xs-mb-30px">
                         <div class="bg-white feature-box h-100 justify-content-start box-shadow-quadruple-large box-shadow-quadruple-large-hover text-start p-17 sm-p-14 border-radius-6px">
                             <div class="feature-box-icon mb-30px">
-                                <img src="images/demo-hosting-home-icon-04.svg" class="h-50px" alt="">
+                                <img src="{{asset('images/health-equipment.jpg')}}" class="h-50px" alt="">
                             </div>
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Equipment Management</span>
 
-                                <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
+                                <a href="javascript:;" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
                                         <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
@@ -234,7 +235,7 @@
                             <div class="feature-box-content">
                                 <span class="d-inline-block fw-600 text-dark-gray fs-18 ls-minus-05px">Resource Usage Analytics</span>
 
-                                <a href="demo-hosting-hosting.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
+                                <a href="javascript:;" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-uppercase-inherit">
                                     <span>
                                         <span class="btn-text">Learn more</span>
                                         <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
@@ -259,7 +260,7 @@
                     <div class="col-lg-5 offset-lg-1 last-paragraph-no-margin" data-anime='{ "el": "childs", "opacity": [0, 1], "rotateY": [-90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 900, "delay": 300, "easing": "easeOutCirc" }'>
                         <span class="text-base-color fw-600 mb-15px text-uppercase d-block">Simple and intuitive</span>
                         <h2 class="fw-600 text-dark-gray w-90 lg-w-100 text-dark-gray fw-700 ls-minus-2px">Real-time Bed Allocation and Monitoring</h2>
-                        <p class="w-90 sm-w-100">Getting your website live is as simple as a click of a button. Everything you need provided in a clear way.</p>
+                        <p class="w-90 sm-w-100">Well-designed hospital management software system software has features for the seamless functioning of the hospital operations department.</p>
                         <ul class="p-0 mb-25px mt-15px list-style-01 w-90 lg-w-100">
                             <li class="border-color-extra-medium-gray fw-600 text-dark-gray d-flex align-items-center pt-15px pb-15px">
                                 <div class="feature-box-icon feature-box-icon-rounded w-35px h-35px rounded-circle bg-solitude-blue me-10px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-13 text-base-color"></i></div>
@@ -270,7 +271,7 @@
                                 Automatically assign beds to patients based on real-time availability and patient priority (e.g., ICU beds for critical patients).
                             </li>
                         </ul>
-                        <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text">
+                        <a href="javascript:;" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text">
                             <span>
                                 <span class="btn-double-text" data-text="Lowest pricing">Get started</span>
                                 <span><i class="feather icon-feather-arrow-right"></i></span>
@@ -488,7 +489,7 @@
                                 <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Basic Care</div>
                                 <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>250</h2>
                                 <p class="mb-25px lh-28">Perfect for small clinics or hospitals just starting out. Includes essential features for managing patients and hospital resources.</p>
-                                <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
+                                <a href="javascript:;" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
                                     </span>
@@ -497,7 +498,7 @@
                             </div>
 
                             <div class="pricing-footer">
-                                <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
+                                <a href="javascript:;" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
                             </div>
                         </div>
                     </div>
@@ -510,7 +511,7 @@
                                 <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Adavanced </div>
                                 <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>750</h2>
                                 <p class="mb-25px lh-28">Designed for medium-sized hospitals with growing needs. Includes advanced patient management, scheduling, and resource tracking.</p>
-                                <a href="demo-hosting-pricing.html" class="btn btn-large btn-yellow btn-round-edge btn-switch-text btn-box-shadow">
+                                <a href="javascript:;" class="btn btn-large btn-yellow btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
                                     </span>
@@ -519,7 +520,7 @@
                             </div>
 
                             <div class="pricing-footer">
-                                <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
+                                <a href="javascript:;" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
                             </div>
                         </div>
                     </div>
@@ -532,7 +533,7 @@
                                 <div class="d-inline-block fs-12 text-uppercase bg-white ps-20px pe-20px fw-600 text-dark-gray mb-30px border-radius-100px box-shadow-large border border-1 border-color-extra-medium-gray">Premium Care</div>
                                 <h2 class="text-dark-gray fw-600 mb-10px ls-minus-3px"><sup class="fs-30">₹</sup>1050</h2>
                                 <p class="mb-25px lh-28">Best for large hospitals with extensive operations. Offers comprehensive management tools, including patient records, doctor scheduling, bed management, and equipment tracking, with priority support.</p>
-                                <a href="demo-hosting-pricing.html" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
+                                <a href="javascript:;" class="btn btn-large btn-dark-gray btn-round-edge btn-switch-text btn-box-shadow">
                                     <span>
                                         <span class="btn-double-text" data-text="Choose package">Choose package</span>
                                     </span>
@@ -540,7 +541,7 @@
                                 <span class="fs-13 w-100 d-block mt-5px">Monthly billing</span>
                             </div>
                             <div class="pricing-footer">
-                                <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
+                                <a href="javascript:;" class="text-decoration-line-bottom d-inline-block text-dark-gray fw-500 ls-minus-05px">Get your 30 day free trial</a>
                             </div>
                         </div>
                     </div>
@@ -549,7 +550,7 @@
                 <div class="row" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <div class="col-12 text-center">
                         <div class="bg-dark-gray fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px xs-m-5px d-inline-block align-middle">Limited offer</div>
-                        <div class="text-dark-gray fw-500 d-inline-block align-middle ls-minus-05px fs-18">Save 20% on annual plans. <a href="demo-hosting-pricing.html" class="text-decoration-line-bottom text-dark-gray d-inline-block">Explore pricing plans<span class="bg-dark-gray"></span></a></div>
+                        <div class="text-dark-gray fw-500 d-inline-block align-middle ls-minus-05px fs-18">Save 20% on annual plans. <a href="javascript:;" class="text-decoration-line-bottom text-dark-gray d-inline-block">Explore pricing plans<span class="bg-dark-gray"></span></a></div>
                     </div>
                 </div>
             </div>
@@ -712,7 +713,7 @@
                 <div class="row justify-content-center mb-5 md-mb-8 sm-mb-40px">
                     <!-- start footer column -->
                     <div class="col-6 col-lg-3 last-paragraph-no-margin order-sm-1 md-mb-40px xs-mb-30px">
-                        <a href="demo-hosting.html" class="footer-logo mb-15px d-inline-block">
+                        <a href="/" class="footer-logo mb-15px d-inline-block">
                             HResources
                         </a>
                         <p class="w-90 lg-w-100">Lorem ipsum amet adipiscing elit to eiusmod ad tempor incididunt enim.</p>
@@ -730,10 +731,10 @@
                     <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
                         <span class="fs-17 fw-500 d-block text-white mb-5px">Company</span>
                         <ul>
-                            <li><a href="demo-hosting-about.html">About</a></li>
-                            <li><a href="demo-hosting-hosting.html">Hosting</a></li>
-                            <li><a href="demo-hosting-domain.html">Domain</a></li>
-                            <li><a href="demo-hosting-pricing.html">Pricing</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="javascript:;">Hosting</a></li>
+                            <li><a href="javascript:;">Domain</a></li>
+                            <li><a href="javascript:;">Pricing</a></li>
                         </ul>
                     </div>
                     <!-- end footer column -->
@@ -741,10 +742,10 @@
                     <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
                         <span class="fs-17 fw-500 d-block text-white mb-5px">Customer</span>
                         <ul>
-                            <li><a href="demo-hosting-support.html">Client support</a></li>
-                            <li><a href="demo-hosting-support.html">Help center</a></li>
-                            <li><a href="demo-hosting-about.html">System status</a></li>
-                            <li><a href="demo-hosting-contact.html">Feedback</a></li>
+                            <li><a href="javascript:;">Client support</a></li>
+                            <li><a href="javascript:;">Help center</a></li>
+                            <li><a href="#">System status</a></li>
+                            <li><a href="javascript:;">Feedback</a></li>
                         </ul>
                     </div>
                     <!-- end footer column -->
